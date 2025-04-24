@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LegalSense by Shon G. McCoy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>LegalSense</h1>
+    <p class="slogan">"It’s alright to be some dumb. It don’t make no sense to be plum dumb. Get LegalSense."</p>
+  </header>
+  <nav>
+    <button onclick="switchTab('chat')">Ask Archive</button>
+    <button onclick="switchTab('code')">Code Library</button>
+    <button onclick="switchTab('builder')">Motion Builder</button>
+    <button onclick="switchTab('simulation')">Simulation Mode</button>
+    <button onclick="switchTab('upload')">Add New Code</button>
+  </nav>
+  <main>
+    <section id="chat" class="tab"><h2>Ask Archive</h2>
+      <textarea id="chatInput" placeholder="Type your question..."></textarea>
+      <button onclick="handleChat()">Submit</button>
+      <div id="chatResponse"></div>
+    </section>
+    <section id="code" class="tab"><h2>Chickasaw Code Library</h2><div id="codeLibrary"></div></section>
+    <section id="builder" class="tab"><h2>Motion Builder</h2><p>Coming soon…</p></section>
+    <section id="simulation" class="tab"><h2>Courtroom Simulation</h2><p>Coming soon…</p></section>
+    <section id="upload" class="tab"><h2>Add New Code</h2>
+      <textarea id="newCode" placeholder="Paste your new code section here..."></textarea>
+      <button onclick="addNewCode()">Add to Archive</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
